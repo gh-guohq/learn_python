@@ -12,11 +12,15 @@ python最具特色的就是使用缩进来表示代码块，不需要使用大�
 Python 通常是一行写完一条语句，但如果语句很长，我们可以使用反斜杠(\)来实现多行语句。
 
 ## 等待用户输入：
+```
 input("\n\n按下 enter 键后退出。")
+```
 
 ## print 
 默认输出是换行的，如果要实现不换行需要在变量末尾加上 end=" "：
+```
 print(参数1，参数2)
+```
 
 ## 变量
 Python3 中有六个标准的数据类型：
@@ -47,7 +51,9 @@ python中单引号和双引号使用完全相同。
 4、Python中的字符串不能改变。
 
 List（列表）：
+```
 list = [ 'abcd', 786 , 2.23, 'runoob', 70.2 ]
+```
 注意：
 1、List写在方括号之间，元素用逗号隔开。
 2、和字符串一样，list可以被索引和切片。 list[1:3] 其实输出的只有两个变量，即list中第二个元素到第三个元素，并不是第1 第2 第3三个元素，
@@ -64,8 +70,10 @@ Set（集合）：
 集合（set）是一个无序不重复元素的序列。
 基本功能是进行成员关系测试和删除重复元素。
 可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。
+```
 student = {'Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose'}  集合成员是字符串
 a = set('abracadabra')  集合成员是字符
+```
 
 Dictionary（字典）：
 字典是一种映射类型，字典用"{ }"标识，它是一个无序的键(key) : 值(value)对集合。
@@ -74,6 +82,7 @@ Dictionary（字典）：
 字典当中的元素是通过键来存取的  字典[键]
 构造函数 dict() 可以直接从键值对序列中构建字典如下：
 实例
+```
 >>>dict([('Runoob', 1), ('Google', 2), ('Taobao', 3)])
 {'Taobao': 3, 'Runoob': 1, 'Google': 2}
  
@@ -82,18 +91,21 @@ Dictionary（字典）：
  
 >>> dict(Runoob=1, Google=2, Taobao=3)
 {'Taobao': 3, 'Runoob': 1, 'Google': 2}
+```
 
 ## 运算符优先级
 
 ## 条件控制
 if 语句
 Python中if语句的一般形式如下所示：
+```
 if condition_1:
     statement_block_1
 elif condition_2:
     statement_block_2
 else:
     statement_block_3
+```
 Python 中用 elif 代替了 else if，所以if语句的关键字为：if – elif – else。
 注意：
 1、每个条件后面要使用冒号（:），表示接下来是满足条件后要执行的语句块。
@@ -103,24 +115,30 @@ Python 中用 elif 代替了 else if，所以if语句的关键字为：if – el
 ## 循环语句
 while 循环
 Python中while语句的一般形式：
+```
 while 判断条件：
     语句
+```
 同样需要注意冒号和缩进。另外，在Python中没有do..while循环。
 
 for 语句
 Python for循环可以遍历任何序列的项目，如一个列表或者一个字符串。
 for循环的一般格式如下：
+```
 for <variable> in <sequence>:
     <statements>
 else:
     <statements>
+```
 
 range()函数
 如果你需要遍历数字序列，可以使用内置range()函数。它会生成数列，例如:
+```
 range(5): 0 1 2 3 4
 range(5,9): 5 6 7 8
 range(0, 10, 3) :0 3 6 9
 range(-10, -100, -30) :-10 -40 -70
+```
 
 ## 迭代器与生成器
 迭代器对象从集合的第一个元素开始访问，直到所有的元素被访问完结束。迭代器只能往前不会后退。
@@ -131,8 +149,10 @@ range(-10, -100, -30) :-10 -40 -70
 实际上的运行方式是每次的调用都在 yield 处中断并返回一个结果，然后再次调用的时候再恢复中断继续运行。
 
 ## 函数
+```
 def 函数名（参数列表）:
     函数体
+```
 
 参数传递
 可更改(mutable)与不可更改(immutable)对象
@@ -154,7 +174,9 @@ python 使用 lambda 来创建匿名函数。
 
 from…import 语句
 Python的from语句让你从模块中导入一个指定的部分到当前命名空间中：
+```
 from modname import name1[, name2[, ... nameN]]
+```
 这里只相当于ｉｎｃｌｕｄｅ了一些函数
 
 __name__属性
