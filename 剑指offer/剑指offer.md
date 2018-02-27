@@ -37,7 +37,7 @@ while stack or p:
         
 ''' 树的前中序遍历
     p = stack.pop()
-    #先序在这里visited
+    #中序在这里visited
     p = p.right
 '''
 '''树的后序遍历
@@ -51,3 +51,4 @@ while stack or p:
 '''
 ```
 11. 双指针框定范围
+12. 树的深度优先遍历的递归，非递归；广度优先的非递归，递归
